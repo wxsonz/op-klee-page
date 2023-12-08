@@ -211,7 +211,7 @@ body {
 }
 
 #icon {
-  background: linear-gradient(var(--color-main2), var(--color-main2), var(--color-main1));
+  background: var(--color-main2)
 }
 
 #icon_row {
@@ -231,7 +231,7 @@ body {
 #quote {
   padding-left: 20%;
   padding-right: 20%;
-  background: linear-gradient(var(--color-main1), var(--color-main2));
+  background: linear-gradient(var(--color-main2), var(--color-main1));
 }
 
 #bargain {
