@@ -1,27 +1,31 @@
 * {
   font-size: 1vw;
-  font-family: "Comic Sans MS", sans-serif;
-
+  font-family: "M+ PLUS 1", sans-serif;
 
   /* debugging box */
-  border: 0.01vh dashed lime;
+  /* border: 0.01vh dashed lime !important; */
 }
 
 :root {
-  --color-main1: rgb(226, 43, 19);
-  --color-main2: rgb(211, 61, 41);
+  --color-main1: rgb(207, 56, 35);
+  --color-main2: rgb(196, 80, 62);
   --color-main3: rgb(236, 200, 171);
-  --color-sub1: rgb(31, 18, 12);
-  --color-sub2: rgb(139, 103, 73);
+  --color-sub1: rgb(34, 18, 11);
+  --color-sub2: rgb(85, 59, 38);
 
   --radius1: 10000px;
 
   --128px: 128px;
 }
 
+@font-face {
+  font-family: "M+ PLUS 1";
+  src: url("https://fonts.google.com/download?family=M+PLUS+1&variableAxes[weight]=300&variableAxes[ital]=0") format("woff2");
+}
+
 /* flex utils */
 .flex-x {display: flex;}
-.flex-y {display: flex-column;}
+.flex-y {display: flex; flex-direction: column;}
 
 .just-c {justify-content: center;}
 .just-sb {justify-content: space-between;}
@@ -29,25 +33,8 @@
 .ali-c {align-items: center;}
 
 /* misc utils */
-.padding1 {
-  width: 90vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-}
 
-.padding2 {
-  width: 70vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
-}
-
-.padding3 {
-  width: 30vw;
-  padding-left: 35vw;
-  padding-right: 35vw;
-}
-
-.gap {gap: 1vw 2vh}
+.gap {gap: 3vw 6vh}
 .gap2 {gap: 2vw 4vh}
 
 .padding-top0 {padding-top: 1vh}
@@ -57,14 +44,12 @@
 .padding-top4 {padding-top: 12vh}
 .padding-top5 {padding-top: 24vh}
 
-
 .padding-bot0 {padding-bottom: 1vh}
 .padding-bot1 {padding-bottom: 2vh}
 .padding-bot2 {padding-bottom: 4vh}
 .padding-bot3 {padding-bottom: 6vh}
 .padding-bot4 {padding-bottom: 12vh}
 .padding-bot5 {padding-bottom: 24vh}
-
 
 .margin-top0 {margin-top: 1vh}
 .margin-top1 {margin-top: 2vh}
@@ -73,7 +58,6 @@
 .margin-top4 {margin-top: 12vh}
 .margin-top5 {margin-top: 24vh}
 
-
 .margin-bot0 {margin-bottom: 1vh}
 .margin-bot1 {margin-bottom: 2vh}
 .margin-bot2 {margin-bottom: 4vh}
@@ -81,9 +65,11 @@
 .margin-bot4 {margin-bottom: 12vh}
 .margin-bot5 {margin-bottom: 24vh}
 
-
 .round {border-radius: var(--radius1)}
 .border {border: 0.1vh solid}
+.border-thick {border: 3vw solid}
+.border-dashed {border-style: dashed}
+.border-dotted {border-style: dotted}
 
 /* 1 = Main */
 /* 2 = Sub */
@@ -91,10 +77,15 @@
 /* 4 = Sub complementary */
 
 /* text weight */
-.tw1 {font-weight: 900}
-.tw2 {font-weight: 400}
-.tw3 {font-weight: 700}
-.tw4 {font-weight: 100}
+.tw1 {font-weight: 100}
+.tw2 {font-weight: 200}
+.tw3 {font-weight: 300}
+.tw4 {font-weight: 400}
+.tw5 {font-weight: 500}
+.tw6 {font-weight: 600}
+.tw7 {font-weight: 700}
+.tw8 {font-weight: 800}
+.tw9 {font-weight: 900}
 
 /* text size */
 .ts1 {font-size: 2vw}
@@ -102,7 +93,6 @@
 .ts3 {font-size: 4vw}
 .ts4 {font-size: 5vw}
 .ts5 {font-size: 6vw}
-
 
 /* text color */
 .tc1 {color: var(--color-main1)}
@@ -137,4 +127,137 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+#header {
+  padding-top: 1.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  justify-content: space-between;
+}
+
+#header #header_1 {
+  border: 2px white solid;
+  border-radius: var(--radius1);
+}
+
+#header img {
+  max-width: 4em;
+  max-height: 4em;
+}
+
+
+#header #header_2 {
+  gap: 10px 10px;
+}
+
+#header_2 div {
+  padding: 12px;
+  border: 2px white solid;
+  border-radius: var(--radius1);
+}
+
+#hero {
+  padding-left: 7%;
+  padding-right: 7%;
+  background: linear-gradient(var(--color-main1), var(--color-main2));
+}
+
+@keyframes btn-animation {
+  0%{background-position:0% 51%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 51%}
+}
+
+@-webkit-keyframes btn-animation-wk {
+  0%{background-position:0% 51%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 51%}
+}
+@-moz-keyframes btn-animation-moz {
+  0%{background-position:0% 51%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 51%}
+}
+
+#hero_1 #btn {
+  width: 50%;
+
+  border-radius: 12px;
+  border: 0px transparent solid;
+
+  background-color: var(--color-sub1);
+
+  margin: 10%;
+  padding: 2%;
+
+  text-align: center;
+  color: var(--color-main3);
+  font-weight: 900;
+}
+
+
+#hero_1 #btn:hover {
+
+
+}
+
+#hero_1_2 div {
+  color: var(--color-main3);
+}
+
+#hero_2 img {
+  max-width: 60em;
+}
+
+#icon {
+  background: linear-gradient(var(--color-main2), var(--color-main2), var(--color-main1));
+}
+
+#icon_row {
+  gap: 10vw;
+  text-decoration: line-through;
+  color: var(--color-main3);
+}
+
+#icon_row img {
+  max-width: 20em;
+}
+
+#icon_row p{
+  margin-top: 2vh;
+}
+
+#quote {
+  padding-left: 20%;
+  padding-right: 20%;
+  background: linear-gradient(var(--color-main1), var(--color-main2));
+}
+
+#bargain {
+  background-color: var(--color-main1);
+  padding: 2vw;
+  border: 1px transparent solid;
+  border-radius: 16px;
+}
+
+#bargain #bargain_1 {
+  justify-content: center;
+}
+
+#bargain_2 p {
+  font-weight: 900;
+  background-color: var(--color-main3);
+  margin-left: 48px;
+  padding: 8px 36px;
+  color: var(--color-sub1);
+  border: 1px transparent solid;
+  border-radius: var(--radius1);
+}
+
+#footer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 10px;
+  color: var(--color-sub2);
 }

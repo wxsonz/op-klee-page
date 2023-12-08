@@ -7,38 +7,43 @@
     <link href="./styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="flex-y">
-
       <!-- header -->
-      <div class="flex-x padding1 just-sb bgc2 tcwhite">
+      <div id="header" class="flex-x bgc1 tcwhite">
 
-        <div class="tw3 ts2">
-          Klee
+        <div class="flex-x ts2">
+          <img src="./klee-pic/klee_logo.gif" id="header_1" alt="https://twitter.com/Seseren_kr"></img>
         </div>
 
-        <div class="flex-x ali-c gap">
-          <div>About Klee</div>
-          <div>About Jumpy dumpty</div>
-          <div>About Kaboom</div>
+        <div class="flex-x ali-c gap" id="header_2">
+          <div class="tw3">ばく…？</div>
+          <div class="tw4">ばく…ばく…！？</div>
+          <div class="tw9">ばく… ばく… ばく… ばく…！！！！</div>
         </div>
 
       </div>
 
       <!-- section1 Hero -->
-      <div class="flex-y padding2 padding-bot4 padding-top1 bgc2">
+      <div id="hero" class="flex-y padding-bot1 padding-top1 ">
 
-        <div class="flex-x tcwhite just-c gap3 just-sb">
+        <div class="flex-x tcwhite just-sb ali-c">
 
-          <div class="flex-y">
-            <div class="tw1 ts4">KA BOOM!</div>
-            <div class="tw2 ts1">何かが爆発した…！？…あっ、雷か。</div>
-            <div class="border round">よいしょっ！</div>
+          <div id="hero_1" class="flex-y">
+            <div class="tw9 ts5 margin-bot1 tcwhite">ドカーン!</div>
+
+            <div id="hero_1_2">
+              <div class="tw5 ts1">何かが爆発した…！？</div>
+              <div class="tw5 ts1">えっ、ばく？</div>
+              <div class="tw5 ts1">雷か！</div>
+              <div class="tw5 ts1">やったー！</div>
+              <div class="tw5 ts1">雷も爆発って言えるよね！</div>
+              <div class="tw5 ts1">雷爆弾作ろうかな！</div>
+            </div>
+
+            <div id="btn">よいしょっ！</div>
           </div>
 
-          <div class="flex-y">
-            <div class="">space</div>
-            <img src="./klee-pic/klee-hero.png" height="300em" width="300em"></img>
-            <div class="">space</div>
+          <div id="hero_2" class="flex-y">
+              <img class="" src="./klee-pic/klee_hero.png"></img>
           </div>
 
         </div>
@@ -47,61 +52,69 @@
     
       <!-- section2 Icon -->
 
-      <div class="flex-y padding1 padding-top2 padding-bot3 bgc3">
+      <div id="icon" class="flex-y padding-top2 padding-bot1 bgc3">
 
         <div class="tcen">
 
-          <div class="margin-bot1">section2-main-text</div>
+          <div class="margin-bot3 ts5 tcwhite tw9">ボンバガンダ</div>
           
-          <div class="flex-x just-c gap">
+          <div class="flex-x just-c tc4 tw7" id="icon_row">
+
             <div class="flex-y">
-              <div class="round border bdc1">icon</div>
-              <div>icon-desc</div>
+              <div class="round border-thick bgc3 bdc3">
+                <img src="./klee-pic/sticker_2.png" max-height="100px" height="auto" width="200em"></img>
+              </div>
+              <p>爆弾合法化！</p>
             </div>
+
             <div class="flex-y">
-              <div class="round border bdc1">icon</div>
-              <div>icon-desc</div>
+              <div class="round border-thick bgc3 bdc3">
+                <img src="./klee-pic/sticker_1.png" max-height="100px" height="auto" width="200em"></img>
+              </div>
+              <p>タダで火薬！</p>
             </div>
+
             <div class="flex-y">
-              <div class="round border bdc1">icon</div>
-              <div>icon-desc</div>
+              <div class="round border-thick bgc3 bdc3">
+                <img src="./klee-pic/sticker_3.png" max-height="100px" height="auto" width="200em"></img>
+              </div>
+              <p>もっとドカーン！</p>
             </div>
-            <div class="flex-y">
-              <div class="round border bdc1">icon</div>
-              <div>icon-desc</div>
-            </div>
+
           </div>
 
         </div>
       </div>
 
       <!-- section3 Quote -->
-      <div class="flex-y padding3 padding-top4 padding-bot4 bgc5">
-        <div class="ts5">ぜーんぶドカーン！</div>
-        <div class="ts3 tright">Klee</div>
+      <div id="quote" class="flex-y padding-top4 padding-bot4">
+        <div class="ts5 tw9 tcwhite">ぜーんぶドカーン！</div>
+        <div class="ts1 tw7 tc3 tright">親切なクレー爆弾魔</div>
       </div>
 
       <!-- section4 Bargain -->
-      <div class="flex-x just-c padding1 padding-top2 padding-bot2 bgc3 tcwhite">
+      <div class="flex-x just-c padding-top2 padding-bot2 tcwhite bgc4">
 
-        <div class="flex-x">
+        <div class="flex-x" id="bargain">
 
-          <div class="flex-y">
-            <div>ボンボン爆弾！</div>
-            <div>うん、新型爆弾の研究が終わった！ジン団長に気付かれる前に逃げよう！</div>
+          <div class="flex-y" id="bargain_1">
+            
+            <div class="flex-x">ボンボン爆弾！</div>
+            <div class="flex-x">うん、新型爆弾の研究が終わった！ジン団長に気付かれる前に逃げよう！</div>
+
           </div>
 
-          <div class="round border bdwhite bgc1">よいしょっ！</div>
+          <div class="flex-y" id="bargain_2">
+            <p>よいしょっ！</p>
+          </div>
 
         </div>
 
       </div>
 
       <!-- footer -->
-      <div class="flex-y padding1 bgc2 tcen tcwhite padding-top1 padding-bot1">
+      <div id="footer" class="flex-y bgc4 tcen">
         copyright the odin project 2021
       </div>
-
-    </div>
   </body>
 </html>
